@@ -1,0 +1,62 @@
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\appsettings.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.staticwebassets.runtime.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.exe
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.deps.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.runtimeconfig.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.dll
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.pdb
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.csproj.AssemblyReference.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.AssemblyInfoInputs.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.AssemblyInfo.cs
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.csproj.CoreCompileInputs.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.RazorAssemblyInfo.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.RazorAssemblyInfo.cs
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.MVC Intro.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.build.MVC Intro.props
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVC Intro.props
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVC Intro.props
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\bundle\MVC Intro.styles.css
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\projectbundle\MVC Intro.bundle.scp.css
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.dll
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\refint\MVC Intro.dll
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.pdb
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.genruntimeconfig.cache
+C:\Users\bogda\source\repos\ASP.NET\MVC Intro\obj\Debug\net6.0\ref\MVC Intro.dll
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\appsettings.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.staticwebassets.runtime.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.exe
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.deps.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.runtimeconfig.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.dll
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\bin\Debug\net6.0\MVC Intro.pdb
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.csproj.AssemblyReference.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.AssemblyInfoInputs.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.AssemblyInfo.cs
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.csproj.CoreCompileInputs.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.RazorAssemblyInfo.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.RazorAssemblyInfo.cs
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.MVC Intro.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.build.MVC Intro.props
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MVC Intro.props
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MVC Intro.props
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\bundle\MVC Intro.styles.css
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\scopedcss\projectbundle\MVC Intro.bundle.scp.css
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.dll
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\refint\MVC Intro.dll
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.pdb
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\MVC Intro.genruntimeconfig.cache
+C:\Users\bogda\OneDrive\Документы\GitHub\ASP.NET\MVC Intro\obj\Debug\net6.0\ref\MVC Intro.dll
