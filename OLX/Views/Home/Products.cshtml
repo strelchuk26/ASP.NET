@@ -1,5 +1,90 @@
-﻿<h1>Створити оголошення</h1>
-<div>
-    <h3>Опишіть у подробицях</h3>
-    <p>Вкажіть назву</p>
+﻿<link href="~/css/products.css" rel="stylesheet" type="text/css"/>
+
+<div class="container">
+    <h2>Створити оголошення</h2>
+    <div class="row gap-3">
+        <div class="section">
+            <h4>Опишіть у подробицях</h4>
+            <p>Вкажіть назву</p>
+            <input class="info" type="text"/>
+            <p>Категорія</p>
+            <select>
+                <option value="" disabled selected>Виберіть категорію</option>
+            </select>
+        </div>
+        <div class="section">
+            <h4>Фото</h4>
+            <p>Додайте фото вашого товару</p>
+            <div class="photos">
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <div class="photo">
+                    <input type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h4>Опис</h4>
+            <textarea rows="11" autocomplete="off" placeholder="Подумайте, що ви хотіли би дізнатися з оголошення. І додайте це в опис" id="description"></textarea>
+        </div>
+        <div class="section">
+            <h4>Місцезнаходження</h4>
+            <input class="info" type="text"/>
+        </div>
+        <div class="section">
+            <h4>Ваші контактні дані</h4>
+            <p>Email-адреса</p>
+            <input class="info" type="email" />
+            <p>Номер телефону</p>
+            <input class="info" type="text" />
+        </div>
+        <div class="section">
+            <div class="submit-btn">
+                <button type="submit">Опублікувати</button>
+            </div>
+        </div>
+    </div>
 </div>

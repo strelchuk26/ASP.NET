@@ -19,6 +19,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-family: 'Outfit', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f4f5;
 }
 
 header {
@@ -31,11 +32,13 @@ header {
 }
 
 .container-fluid {
-    width: 1200px;
+    width: 1300px;
+    padding: 0;
 }
 
 .container {
-    width: 1200px;
+    width: 1300px;
+    padding: 0;
 }
 
 .navbar-brand img{
