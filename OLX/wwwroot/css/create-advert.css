@@ -1,0 +1,99 @@
+﻿h2 {
+	font-weight: 700;
+	margin-top: 48px;
+	margin-bottom: 30px;
+}
+
+.row {
+	padding: 10px;
+}
+
+.section {
+	background-color: #fff;
+	padding: 32px;
+	border-radius: 5px;
+}
+
+.row p {
+	margin: 14px 0 0 0;
+	color: #909090;
+	padding-bottom: 8px;
+}
+
+.info {
+	color: #4e7177;
+	height: 56px;
+	background-color: #f2f4f5;
+	outline: none;
+	border: none;
+	padding: 16px;
+	width: 70%;
+	border-radius: 5px;
+}
+
+.row select {
+	color: #4e7177;
+	height: 56px;
+	background-color: #f2f4f5;
+	outline: none;
+	border: none;
+	padding: 16px;
+	width: 35%;
+	border-radius: 5px;
+}
+
+.photo {
+	display: flex;
+	background-color: #f2f4f5;
+	width: 185px;
+	height: 140px;
+	padding: 0;
+	align-items: center;
+	border-radius: 5px;
+}
+
+	.photo input {
+		display: inline-block;
+		position: absolute;
+		width: 185px;
+		height: 140px;
+		opacity: 0;
+		overflow: hidden;
+	}
+
+	.photo button {
+		margin: auto auto;
+		border: none;
+		background-color: transparent;
+	}
+
+#description {
+	background-color: #f2f4f5 !important;
+	padding: 16px;
+	padding-right: 48px;
+	width: 70%;
+	border: none;
+	outline: none;
+	resize: none;
+	color: #909090;
+	border-radius: 5px;
+}
+
+.submit-btn {
+	display: flex;
+	justify-content: flex-end;
+}
+
+	.submit-btn button {
+		background-color: rgb(0, 47, 52);
+		color: #fff;
+		font-weight: bold;
+		padding: 10px 30px 8px 30px;
+		border-radius: 5px;
+		border: 5px solid rgb(0, 47, 52);
+	}
+
+		.submit-btn button:hover {
+			background-color: #fff;
+			color: rgb(0, 47, 52);
+		}

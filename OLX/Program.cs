@@ -1,3 +1,9 @@
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using Microsoft.EntityFrameworkCore;
+using DataAccess.Data;
+using Microsoft.AspNetCore.Identity;
+
 namespace OLX
 {
 	public class Program
@@ -5,17 +11,25 @@ namespace OLX
 		public static void Main(string[] args)
 		{
 			var builder = WebApplication.CreateBuilder(args);
+            string connStr = builder.Configuration.GetConnectionString("LocalDb");
 
-			// Add services to the container.
-			builder.Services.AddControllersWithViews();
+            builder.Services.AddControllersWithViews();
 
-			var app = builder.Build();
+			builder.Services.AddDbContext<OLXDbContext>(opts => opts.UseSqlServer(connStr));
 
-			// Configure the HTTP request pipeline.
+               builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<OLXDbContext>();
+
+            builder.Services.AddFluentValidationAutoValidation();
+			builder.Services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+
+            builder.Services.AddDistributedMemoryCache();
+
+            var app = builder.Build();
+
 			if (!app.Environment.IsDevelopment())
 			{
-				app.UseExceptionHandler("/Home/Error");
-				// The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+				app.UseExceptionHandler("/Adverts/Error");
 				app.UseHsts();
 			}
 
@@ -23,12 +37,15 @@ namespace OLX
 			app.UseStaticFiles();
 
 			app.UseRouting();
+            app.UseAuthentication();;
 
 			app.UseAuthorization();
 
+			app.MapRazorPages();
+
 			app.MapControllerRoute(
 				name: "default",
-				pattern: "{controller=Home}/{action=Index}/{id?}");
+				pattern: "{controller=Adverts}/{action=Index}/{id?}");
 
 			app.Run();
 		}

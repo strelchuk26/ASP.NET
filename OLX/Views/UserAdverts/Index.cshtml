@@ -1,0 +1,67 @@
+﻿@model List<DataAccess.Entities.UserAdvert>
+
+<link rel="stylesheet" href="~/css/user-adverts.css" />
+
+<div class="container">
+    <h2>Ваші оголошення</h2>
+    <div class="row gap-3">
+        <div class="product">
+            <div class="info">
+                <div class="image">
+                    <a>
+                        <img src="~/img/salomon-xt6.jpg" alt="product-image" />
+                    </a>
+                </div>
+                <div class="wrapper">
+                    <div class="name-price">
+                        <h4>Salomon XT-6 White Lunar Rock Icy Morn</h4>
+                        <h5>2999 грн.</h5>
+                    </div>
+                    <div>
+                        <div class="category">
+                            <p>Мода і стиль</p>
+                        </div>
+                        <div class="location">
+                            <p>Київ, Солом'янський, Київська область</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="button">Редагувати</button>
+                <button type="button">Деактивувати</button>
+            </div>
+        </div>
+
+        @foreach (var i in Model)
+        {
+            <div class="product">
+                <div class="info">
+                    <div class="image">
+                        <a>
+                            <img src="~/img/salomon-xt6.jpg" alt="product-image" />
+                        </a>
+                    </div>
+                    <div class="wrapper">
+                        <div class="name-price">
+                            <h4>@i.Name</h4>
+                            <h5>@i.Price грн.</h5>
+                        </div>
+                        <div>
+                            <div class="category">
+                                <p>@i.Category</p>
+                            </div>
+                            <div class="location">
+                                <p>@i.Location</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="button">Редагувати</button>
+                    <button type="button">Деактивувати</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,60 @@
+﻿@model DataAccess.Entities.UserAdvert
+
+<link href="~/css/create-advert.css" rel="stylesheet" type="text/css" />
+
+<div class="container">
+    <h2>Створити оголошення</h2>
+    <div class="row gap-3">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div class="section">
+                <h4>Опишіть у подробицях</h4>
+                <p>Вкажіть назву</p>
+                <input asp-for="Name" class="info" type="text" />
+                <span asp-validation-for="Name" class="form-text text-danger"></span>
+                <p>Категорія</p>
+                <select asp-for="CategoryId" asp-items="@ViewBag.Categories">
+                    <option disabled selected>Виберіть категорію</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="form-text text-danger"></span>
+            </div>
+            <div class="section">
+                <h4>Фото</h4>
+                <p>Додайте фото вашого товару</p>
+                <div class="photo">
+                    <input name="image" asp-action="Create" asp-controller="UserAdverts" type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+                <span asp-validation-for="ImageFile" class="form-text text-danger"></span>
+            </div>
+            <div class="section">
+                <h4>Опис</h4>
+                <textarea asp-for="Description" rows="11" autocomplete="off" placeholder="Подумайте, що ви хотіли би дізнатися з оголошення. І додайте це в опис" id="description"></textarea>
+                <span asp-validation-for="Description" class="form-text text-danger"></span>
+            </div>
+            <div class="section">
+                <h4>Місцезнаходження</h4>
+                <input asp-for="Location" class="info" type="text" />
+                <span asp-validation-for="Location" class="form-text text-danger"></span>
+            </div>
+            <div class="section">
+                <h4>Ваші контактні дані</h4>
+                <p>Email-адреса</p>
+                <input asp-for="User.Email" class="info" type="email" />
+                <p>Номер телефону</p>
+                <input asp-for="User.Phone" class="info" type="text" />
+            </div>
+            <div class="section">
+                <h4>Ціна</h4>
+                <p>Вкажіть ціну товару</p>
+                <input asp-for="Price" class="info" type="number" />
+            </div>
+            <div class="section">
+                <div class="submit-btn">
+                    <button type="submit">Опублікувати</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

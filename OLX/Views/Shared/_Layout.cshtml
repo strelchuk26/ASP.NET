@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;900&family=Lexend+Deca&family=Outfit:wght@400;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OLX.styles.css" asp-append-version="true" />
 </head>
@@ -16,20 +16,21 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid d-flex justify-content-between">
                 <div>
-                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="navbar-brand" asp-area="" asp-controller="Adverts" asp-action="Index">
                         <img src="~/img/olx.svg"/>
                     </a>
                 </div>
                 <div>
                     <ul class="navbar-nav flex-grow-1 align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Profile">Ваш профіль</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="UserAdverts" asp-action="Index">Ваш профіль</a>
                         </li>
                         <li class="nav-item m-lg-3">
                             <button type="button" class="btn btn-light">
-                                <a class="nav-link text-dark p-1" asp-controller="Home" asp-action="Products">Додати оголошення</a>
+                                <a class="nav-link text-dark p-1" asp-controller="UserAdverts" asp-action="Create">Додати оголошення</a>
                             </button>
                         </li>
+                        <partial name="_LoginPartial" />
                     </ul>
                 </div>
             </div>

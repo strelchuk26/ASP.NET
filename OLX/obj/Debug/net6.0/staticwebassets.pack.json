@@ -5,20 +5,24 @@
       "PackagePath": "staticwebassets\\OLX.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\products.css",
-      "PackagePath": "staticwebassets\\css\\products.css"
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\create-advert.css",
+      "PackagePath": "staticwebassets\\css\\create-advert.css"
     },
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\user-adverts.css",
+      "PackagePath": "staticwebassets\\css\\user-adverts.css"
     },
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\olx.svg",
       "PackagePath": "staticwebassets\\img\\olx.svg"
+    },
+    {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\salomon-xt6.jpg",
+      "PackagePath": "staticwebassets\\img\\salomon-xt6.jpg"
     },
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\js\\site.js",
@@ -203,6 +207,10 @@
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\lib\\favicon.ico",
+      "PackagePath": "staticwebassets\\lib\\favicon.ico"
     },
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",

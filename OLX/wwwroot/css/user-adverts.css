@@ -1,0 +1,61 @@
+﻿.product {
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 5px;
+}
+
+p {
+	color: rgb(64, 99, 103);
+	font-size: 14px;
+}
+
+h5 {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.info {
+	display: flex;
+	width: 100%;
+}
+
+.name-price {
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper {
+	width: 100%;
+	margin-left: 28px;
+}
+
+.image img {
+	width: 215px;
+	height: 150px;
+	object-fit: cover;
+}
+
+.actions {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	gap: 5px;
+}
+
+	.actions button {
+		height: 40px;
+		padding: 6px 22px;
+		background-color: #fff;
+		color: rgb(0, 47, 52);
+		border: 2px solid rgb(0, 47, 52);
+		border-radius: 5px;
+		color: rgb(0, 47, 52);
+		font-weight: 700;
+		font-size: 14px;
+		transition: 0.1s;
+	}
+
+		.actions button:hover {
+			background-color: #002f34;
+			color: #fff;
+		}

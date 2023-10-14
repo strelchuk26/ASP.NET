@@ -1,0 +1,26 @@
+﻿@model List<DataAccess.Entities.Advert>
+
+<div class="container">
+    <h1 class="text-center">Оголошення</h1>
+    <ul class="adverts row row-cols-1 row-cols-md-4 g-4 mt-3">
+        @foreach (var i in Model)
+        {
+            <li class="advert">
+                <div>
+                    <img src=@i. alt="advert-image" />
+                </div>
+                <div>
+                    <p>@i.Name</p>
+                </div>
+                <div class="advert-info">
+                    <ul>
+                        <li>@i.Location</li>
+                        <li> - </li>
+                        <li>@i.Date</li>
+                    </ul>
+                    <h6>@i.Price грн</h6>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
