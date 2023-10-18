@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="actions">
-                    <button type="button">Редагувати</button>
+                    <a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-light">Редагувати</a>
                     <a asp-action="Delete" asp-route-id="@i.Id" class="btn btn-danger">Деактивувати</a>
                 </div>
             </div>

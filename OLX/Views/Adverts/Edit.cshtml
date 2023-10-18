@@ -1,0 +1,49 @@
+﻿@model DataAccess.Entities.Advert
+
+<link href="~/css/create-advert.css" rel="stylesheet" type="text/css" />
+
+<div class="container">
+    <h2>Змінити оголошення</h2>
+    <div class="row gap-3">
+        <form asp-action="Edit" method="post" enctype="multipart/form-data">
+            <div class="section">
+                <h4>Опишіть у подробицях</h4>
+                <p>Вкажіть назву</p>
+                <input asp-for="Name" class="info" type="text" />
+                <p>Категорія</p>
+                <select asp-for="CategoryId" asp-items="@ViewBag.Categories">
+                    <option disabled selected>Виберіть категорію</option>
+                </select>
+            </div>
+            <div class="section">
+                <h4>Фото</h4>
+                <p>Додайте фото вашого товару</p>
+                <div class="photo">
+                    <input name="image" asp-action="Edit" asp-controller="Adverts" type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <button>
+                        <span>Додати фото</span>
+                    </button>
+                </div>
+            </div>
+            <div class="section">
+                <h4>Опис</h4>
+                <textarea asp-for="Description" rows="11" autocomplete="off" placeholder="Подумайте, що ви хотіли би дізнатися з оголошення. І додайте це в опис" id="description"></textarea>
+            </div>
+            <div class="section">
+                <h4>Місцезнаходження</h4>
+                <input asp-for="Location" class="info" type="text" />
+            </div>
+            <div class="section">
+                <h4>Ціна</h4>
+                <p>Вкажіть ціну товару</p>
+                <input asp-for="Price" class="info" type="number" />
+            </div>
+            <div class="section">
+                <div class="submit-btn">
+                    <button type="submit">Змінити</button>
+                    <a asp-action="MyAdverts" class="btn btn-dark">Назад</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
