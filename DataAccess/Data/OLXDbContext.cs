@@ -37,30 +37,9 @@ namespace DataAccess.Data
                 new Category() { Id = 7, Name = "Musical Instruments" },
                 new Category() { Id = 8, Name = "Art" }
             });
-
-            //modelBuilder.Entity<User>().HasData(new[] 
-            //{
-            //    new User() { Id = 1, Email = "2e2@gamil.com" }
-            //});
-
-            //modelBuilder.Entity<Advert>().HasData(new[]
-            //{
-            //    new Advert() 
-            //    {
-            //        Id = 1,
-            //        Name = "Salomon XT-6 Gore-Tex",
-            //        CategoryId = 3,
-            //        Description = "dsadasdas",
-            //        Location = "Kyiv",
-            //        Price = 3999,
-            //        UserId = 1,
-            //        ImageFile = new byte[] { 1, 3, 5 }
-            //    }
-            //});
         }
 
         public DbSet<Advert> Adverts { get; set; }
-		public DbSet<UserAdvert> UserAdverts { get; set; }
 		public DbSet<Category> Categories { get; set; }
 	}
 }

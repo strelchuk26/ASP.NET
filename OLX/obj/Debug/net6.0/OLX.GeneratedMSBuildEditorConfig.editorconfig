@@ -48,8 +48,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/Adverts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/Adverts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/Adverts/MyAdverts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0c1xNeUFkdmVydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/Shared/Error.cshtml]
@@ -62,14 +70,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/UserAdverts/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFkdmVydHNcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/UserAdverts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlckFkdmVydHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/bogda/OneDrive/Документы/GitHub/ASP.NET/OLX/Views/_ViewImports.cshtml]

@@ -1,4 +1,4 @@
-﻿@model DataAccess.Entities.UserAdvert
+﻿@model DataAccess.Entities.Advert
 
 <link href="~/css/create-advert.css" rel="stylesheet" type="text/css" />
 
@@ -21,7 +21,7 @@
                 <h4>Фото</h4>
                 <p>Додайте фото вашого товару</p>
                 <div class="photo">
-                    <input name="image" asp-action="Create" asp-controller="UserAdverts" type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
+                    <input name="image" asp-action="Create" asp-controller="Adverts" type="file" accept="image/heic, image/png, image/jpeg, image/webp" />
                     <button>
                         <span>Додати фото</span>
                     </button>

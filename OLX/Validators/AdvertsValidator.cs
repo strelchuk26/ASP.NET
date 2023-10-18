@@ -3,9 +3,9 @@ using DataAccess.Entities;
 
 namespace OLX.Validators
 {
-	public class UserAdvertsValidator : AbstractValidator<UserAdvert>
+	public class AdvertsValidator : AbstractValidator<Advert>
 	{
-		public UserAdvertsValidator()
+		public AdvertsValidator()
 		{
 			RuleFor(x => x.Id).NotNull();
 			RuleFor(x => x.Name).NotNull().MaximumLength(100);

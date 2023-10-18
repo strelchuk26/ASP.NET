@@ -1,4 +1,4 @@
-﻿@model List<DataAccess.Entities.UserAdvert>
+﻿@model List<DataAccess.Entities.Advert>
 
 <link rel="stylesheet" href="~/css/user-adverts.css" />
 
@@ -59,7 +59,7 @@
                 </div>
                 <div class="actions">
                     <button type="button">Редагувати</button>
-                    <a class="btn btn-danger">Деактивувати</a>
+                    <a asp-action="Delete" asp-route-id="@i.Id" class="btn btn-danger">Деактивувати</a>
                 </div>
             </div>
         }
