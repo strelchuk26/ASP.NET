@@ -60,7 +60,7 @@ namespace OLX.Controllers
             }
             else
             {
-                string placeholderImagePath = "~/img/placeholder.png";
+                string placeholderImagePath = Path.Combine(Environment.CurrentDirectory, "wwwroot\\img\\placeholder.png");
 
                 using (var ms = new MemoryStream())
                 {
@@ -73,7 +73,7 @@ namespace OLX.Controllers
                 }
             }
 
-            if (!ModelState.IsValid)
+            if (advert.Description == null)
             {
                 LoadCategories();
                 return View(advert);

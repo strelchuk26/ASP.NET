@@ -9,7 +9,6 @@ namespace OLX.Validators
 		{
 			RuleFor(x => x.Id).NotNull();
 			RuleFor(x => x.Name).NotNull().MaximumLength(100);
-			RuleFor(x => x.ImageFile).NotNull();
 			RuleFor(x => x.CategoryId).GreaterThan(0);
 			RuleFor(x => x.Description).Length(10, 1000);
 			RuleFor(x => x.Location).NotNull();
