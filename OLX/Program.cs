@@ -3,6 +3,7 @@ using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using DataAccess.Data;
 using Microsoft.AspNetCore.Identity;
+using DataAccess.Entities;
 
 namespace OLX
 {
@@ -17,7 +18,7 @@ namespace OLX
 
 			builder.Services.AddDbContext<OLXDbContext>(opts => opts.UseSqlServer(connStr));
 
-               builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+               builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<OLXDbContext>();
 
             builder.Services.AddFluentValidationAutoValidation();

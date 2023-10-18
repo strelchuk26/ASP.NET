@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gDYGgPzbQg9DsP8WGGpmLBEGsdMh2jwObWrws8wgk8Y=",
+  "Hash": "sGNraxWWiMzQ9rcUKrow/zUV1ATXmZJA3LFKsQimAik=",
   "Source": "OLX",
   "BasePath": "_content/OLX",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\olx.svg"
+    },
+    {
+      "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\placeholder.png",
+      "SourceId": "OLX",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\",
+      "BasePath": "_content/OLX",
+      "RelativePath": "img/placeholder.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\placeholder.png"
     },
     {
       "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\salomon-xt6.jpg",

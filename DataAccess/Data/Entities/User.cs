@@ -1,10 +1,10 @@
-﻿namespace DataAccess.Entities
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace DataAccess.Entities
 {
-	public class User
+	public class User : IdentityUser
 	{
-		public int Id { get; set; }
-		public string Email { get; set; }
-		public string Phone { get; set; }
 		public ICollection<Advert> Adverts { get; set; }
 		public ICollection<UserAdvert> UserAdverts { get; set; }
 	}

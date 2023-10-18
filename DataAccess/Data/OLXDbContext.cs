@@ -7,12 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Common;
 using System.Globalization;
-using DataAccess.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace DataAccess.Data
 {
-	public class OLXDbContext : IdentityDbContext
+	public class OLXDbContext : IdentityDbContext<User>
 	{
 		public OLXDbContext() { }
 		public OLXDbContext(DbContextOptions options) : base(options) { }
@@ -39,30 +38,29 @@ namespace DataAccess.Data
                 new Category() { Id = 8, Name = "Art" }
             });
 
-            modelBuilder.Entity<User>().HasData(new[] 
-            {
-                new User() { Id = 1, Email = "2e2@gamil.com", Phone = "+380000000" }
-            });
+            //modelBuilder.Entity<User>().HasData(new[] 
+            //{
+            //    new User() { Id = 1, Email = "2e2@gamil.com" }
+            //});
 
-            modelBuilder.Entity<Advert>().HasData(new[]
-            {
-                new Advert() 
-                {
-                    Id = 1,
-                    Name = "Salomon XT-6 Gore-Tex",
-                    CategoryId = 3,
-                    Description = "dsadasdas",
-                    Location = "Kyiv",
-                    Price = 3999,
-                    UserId = 1,
-                    ImageFile = new byte[] { 1, 3, 5 }
-                }
-            });
+            //modelBuilder.Entity<Advert>().HasData(new[]
+            //{
+            //    new Advert() 
+            //    {
+            //        Id = 1,
+            //        Name = "Salomon XT-6 Gore-Tex",
+            //        CategoryId = 3,
+            //        Description = "dsadasdas",
+            //        Location = "Kyiv",
+            //        Price = 3999,
+            //        UserId = 1,
+            //        ImageFile = new byte[] { 1, 3, 5 }
+            //    }
+            //});
         }
 
         public DbSet<Advert> Adverts { get; set; }
 		public DbSet<UserAdvert> UserAdverts { get; set; }
 		public DbSet<Category> Categories { get; set; }
-		public DbSet<User> Users { get; set; }
 	}
 }

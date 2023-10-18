@@ -39,7 +39,7 @@
                 <div class="info">
                     <div class="image">
                         <a>
-                            <img src="~/img/salomon-xt6.jpg" alt="product-image" />
+                            <img src="data:image/png;base64,@Convert.ToBase64String(i.ImageFile)" alt="advert-img">
                         </a>
                     </div>
                     <div class="wrapper">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="actions">
                     <button type="button">Редагувати</button>
-                    <button type="button">Деактивувати</button>
+                    <a class="btn btn-danger">Деактивувати</a>
                 </div>
             </div>
         }

@@ -1,15 +1,19 @@
 ﻿using DataAccess.Data;
 using DataAccess.Entities;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Web.Virtualization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing;
+using System.Security.Claims;
 
 namespace OLX.Controllers
 {
+    [Authorize]
 	public class UserAdvertsController : Controller
 	{
 		private OLXDbContext ctx;
-
         public UserAdvertsController()
         {
 			ctx = new OLXDbContext();
@@ -41,8 +45,8 @@ namespace OLX.Controllers
             //    return View(advert);
             //}
 
-            advert.User.Id = 1;
-            advert.UserId = 1;
+            advert.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
 
             if (image != null && image.Length > 0)
             {
@@ -50,6 +54,20 @@ namespace OLX.Controllers
                 {
                     await image.CopyToAsync(memoryStream);
                     advert.ImageFile = memoryStream.ToArray();
+                }
+            }
+            else
+            {
+                string placeholderImagePath = "~/img/placeholder.png";
+
+                using (var ms = new MemoryStream())
+                {
+                    using (FileStream fs = new FileStream(placeholderImagePath, FileMode.Open, FileAccess.Read))
+                    {
+                        fs.CopyTo(ms);
+                    }
+
+                    advert.ImageFile = ms.ToArray();
                 }
             }
 
@@ -67,6 +85,20 @@ namespace OLX.Controllers
             ctx.UserAdverts.Add(advert);
             ctx.Adverts.Add(newAdvert);
             await ctx.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var userAdvert = ctx.UserAdverts.Find(id);
+            var advert = ctx.Adverts.Find();
+
+            if (userAdvert == null) return NotFound();
+
+
+            ctx.UserAdverts.Remove(userAdvert);
+            ctx.SaveChanges();
 
             return RedirectToAction("Index");
         }

@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\img\\olx.svg"
     },
     {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\placeholder.png",
+      "PackagePath": "staticwebassets\\img\\placeholder.png"
+    },
+    {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\salomon-xt6.jpg",
       "PackagePath": "staticwebassets\\img\\salomon-xt6.jpg"
     },
