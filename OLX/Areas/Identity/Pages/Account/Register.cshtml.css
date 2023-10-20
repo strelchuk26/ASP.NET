@@ -1,0 +1,19 @@
+﻿.form {
+	position: absolute;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+#registerSubmit {
+	background-color: rgb(0,47,52);
+	transition: 0.1s;
+	border: 3px solid rgb(0,47,52);
+}
+
+#registerSubmit:hover {
+	color: rgb(0,47,52);
+	background-color: #fff;
+}

@@ -122,6 +122,31 @@ namespace DataAccess.Migrations
                         });
                 });
 
+            modelBuilder.Entity("DataAccess.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AdvertId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdvertId")
+                        .IsUnique();
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders");
+                });
+
             modelBuilder.Entity("DataAccess.Entities.User", b =>
                 {
                     b.Property<string>("Id")
@@ -337,6 +362,25 @@ namespace DataAccess.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("DataAccess.Entities.Order", b =>
+                {
+                    b.HasOne("DataAccess.Entities.Advert", "Advert")
+                        .WithOne("Order")
+                        .HasForeignKey("DataAccess.Entities.Order", "AdvertId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataAccess.Entities.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Advert");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -388,6 +432,12 @@ namespace DataAccess.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("DataAccess.Entities.Advert", b =>
+                {
+                    b.Navigation("Order")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("DataAccess.Entities.Category", b =>
                 {
                     b.Navigation("Adverts");
@@ -396,6 +446,8 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("DataAccess.Entities.User", b =>
                 {
                     b.Navigation("Adverts");
+
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }

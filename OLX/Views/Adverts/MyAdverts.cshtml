@@ -1,5 +1,9 @@
 ﻿@model List<DataAccess.Entities.Advert>
 
+@{
+    ViewData["Title"] = "Мій профіль";
+}
+
 <link rel="stylesheet" href="~/css/user-adverts.css" />
 
 <div class="container">
@@ -7,11 +11,9 @@
         <div>
             <h4>@User.Identity.Name</h4>
         </div>
-        <div class="d-flex gap-3">
-            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Adverts", new { area = "" })">
-                <button id="logout" type="submit" class="nav-link btn btn-link">Вийти</button>
-            </form>
-        </div>
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Adverts", new { area = "" })">
+            <button id="logout" type="submit" class="nav-link btn btn-link">Вийти</button>
+        </form>
     </div>
     <h2>Ваші оголошення</h2>
   

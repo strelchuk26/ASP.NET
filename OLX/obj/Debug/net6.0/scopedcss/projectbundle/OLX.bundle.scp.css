@@ -1,3 +1,47 @@
+/* _content/OLX/Areas/Identity/Pages/Account/Login.cshtml.rz.scp.css */
+.form[b-56h4lc4rqw] {
+	position: absolute;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+p[b-56h4lc4rqw] {
+	margin: 7px 0 0 0;
+}
+
+#login-submit[b-56h4lc4rqw] {
+	background-color: rgb(0,47,52);
+	transition: 0.1s;
+	border: 3px solid rgb(0,47,52);
+}
+
+#login-submit:hover[b-56h4lc4rqw] {
+	color: rgb(0,47,52);
+	background-color: #fff;
+}
+/* _content/OLX/Areas/Identity/Pages/Account/Register.cshtml.rz.scp.css */
+.form[b-th6ic7hirm] {
+	position: absolute;
+	width: 400px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+#registerSubmit[b-th6ic7hirm] {
+	background-color: rgb(0,47,52);
+	transition: 0.1s;
+	border: 3px solid rgb(0,47,52);
+}
+
+#registerSubmit:hover[b-th6ic7hirm] {
+	color: rgb(0,47,52);
+	background-color: #fff;
+}
 /* _content/OLX/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */

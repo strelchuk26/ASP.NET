@@ -26,7 +26,7 @@ namespace DataAccess.Data
         {
             base.OnModelCreating(modelBuilder);
 
-			modelBuilder.Entity<Category>().HasData(new[] 
+            modelBuilder.Entity<Category>().HasData(new[] 
 			{
                 new Category() { Id = 1, Name = "Електроніка" },
                 new Category() { Id = 2, Name = "Спорт" },
