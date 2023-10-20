@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\OLX.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\advert.css",
+      "PackagePath": "staticwebassets\\css\\advert.css"
+    },
+    {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\create-advert.css",
       "PackagePath": "staticwebassets\\css\\create-advert.css"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\user-adverts.css",
       "PackagePath": "staticwebassets\\css\\user-adverts.css"
+    },
+    {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\avatar.svg",
+      "PackagePath": "staticwebassets\\img\\avatar.svg"
     },
     {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\olx.svg",

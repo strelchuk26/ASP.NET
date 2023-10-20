@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sGNraxWWiMzQ9rcUKrow/zUV1ATXmZJA3LFKsQimAik=",
+  "Hash": "Ln29QjhXrThTS8dDt4isLKEZxvaGScJkMZZ/vh8++Go=",
   "Source": "OLX",
   "BasePath": "_content/OLX",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\OLX.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\advert.css",
+      "SourceId": "OLX",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\",
+      "BasePath": "_content/OLX",
+      "RelativePath": "css/advert.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\advert.css"
+    },
+    {
       "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\create-advert.css",
       "SourceId": "OLX",
       "SourceType": "Discovered",
@@ -1120,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\user-adverts.css"
+    },
+    {
+      "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\avatar.svg",
+      "SourceId": "OLX",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\",
+      "BasePath": "_content/OLX",
+      "RelativePath": "img/avatar.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\avatar.svg"
     },
     {
       "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\img\\olx.svg",

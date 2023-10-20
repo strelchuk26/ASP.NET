@@ -3,42 +3,25 @@
 <link rel="stylesheet" href="~/css/user-adverts.css" />
 
 <div class="container">
-    <h2>Ваші оголошення</h2>
-    <div class="row gap-3">
-        <div class="product">
-            <div class="info">
-                <div class="image">
-                    <a>
-                        <img src="~/img/salomon-xt6.jpg" alt="product-image" />
-                    </a>
-                </div>
-                <div class="wrapper">
-                    <div class="name-price">
-                        <h4>Salomon XT-6 White Lunar Rock Icy Morn</h4>
-                        <h5>2999 грн.</h5>
-                    </div>
-                    <div>
-                        <div class="category">
-                            <p>Мода і стиль</p>
-                        </div>
-                        <div class="location">
-                            <p>Київ, Солом'янський, Київська область</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="actions">
-                <button type="button">Редагувати</button>
-                <button type="button">Деактивувати</button>
-            </div>
+    <div class="d-flex justify-content-between">
+        <div>
+            <h4>@User.Identity.Name</h4>
         </div>
-
+        <div class="d-flex gap-3">
+            <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Adverts", new { area = "" })">
+                <button id="logout" type="submit" class="nav-link btn btn-link">Вийти</button>
+            </form>
+        </div>
+    </div>
+    <h2>Ваші оголошення</h2>
+  
+    <div class="row gap-3">
         @foreach (var i in Model)
         {
             <div class="product">
                 <div class="info">
                     <div class="image">
-                        <a>
+                        <a asp-action="Advert" asp-route-id="@i.Id">
                             <img src="data:image/png;base64,@Convert.ToBase64String(i.ImageFile)" alt="advert-img">
                         </a>
                     </div>
@@ -47,19 +30,21 @@
                             <h4>@i.Name</h4>
                             <h5>@i.Price грн.</h5>
                         </div>
-                        <div>
-                            <div class="category">
-                                <p>@i.Category</p>
+                        <div class="d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex flex-column w-100">
+                                <p>@i.Category.Name</p>
+                                <div class="d-flex">
+                                    <p>@i.Location&nbsp;</p>
+                                    <p>-</p>
+                                    <p>&nbsp;@i.Date</p>
+                                </div>
                             </div>
-                            <div class="location">
-                                <p>@i.Location</p>
+                            <div class="actions">
+                                <a asp-action="Edit" asp-route-id="@i.Id" class="btn">Редагувати</a>
+                                <a asp-action="Delete" asp-route-id="@i.Id" class="btn">Деактивувати</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="actions">
-                    <a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-light">Редагувати</a>
-                    <a asp-action="Delete" asp-route-id="@i.Id" class="btn btn-danger">Деактивувати</a>
                 </div>
             </div>
         }

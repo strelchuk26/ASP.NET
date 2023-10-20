@@ -1,0 +1,72 @@
+﻿.grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 16px;
+}
+
+.section {
+	background-color: #fff;
+	padding: 24px;
+	margin-bottom: 24px;
+	border-radius: 5px;
+}
+
+.image img {
+	height: 700px;
+}
+
+.description {
+	max-width: 700px;
+	white-space: pre-line;
+	color: rgb(0, 47, 52);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h1 {
+	color: rgb(0, 47, 52);
+	font-size: 20px;
+	font-weight: 400;
+	word-break: break-word;
+	margin: 8px 20px 24px 0;
+}
+
+.span-date {
+	font-size: 12px;
+}
+
+.buy-btn {
+	width: 100%;
+	min-height: 48px;
+	border-radius: 5px;
+	background-color: rgb(0, 47, 52);
+	color: #fff;
+	outline: none;
+	border: none;
+	transition: 0.1s;
+}
+
+.buy-btn:hover {
+	background-color: #fff;
+	color: rgb(0, 47, 52);
+	border: 3px solid black;
+}
+
+.buy-btn span {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.price {
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+
+.user-email {
+	margin: 0 0 0 10px;
+}
+
+.user-phone {
+	margin: 0 0 0 10px;
+	font-weight: 300;
+}

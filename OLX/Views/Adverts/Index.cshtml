@@ -6,20 +6,24 @@
         @foreach (var i in Model)
         {
             <li class="advert">
-                <div>
-                    <img src="data:image/png;base64,@Convert.ToBase64String(i.ImageFile)" alt="advert-img">
-                </div>
-                <div>
-                    <p>@i.Name</p>
-                </div>
-                <div class="advert-info">
-                    <ul>
-                        <li>@i.Location</li>
-                        <li> - </li>
-                        <li>@i.Date</li>
-                    </ul>
-                    <h6>@i.Price грн</h6>
-                </div>
+                <a asp-action="Advert" asp-route-id="@i.Id">
+                    <div>
+                        <img src="data:image/png;base64,@Convert.ToBase64String(i.ImageFile)" alt="advert-img">
+                    </div>
+                    <div class="d-flex flex-column h-100">
+                        <div>
+                            <p>@i.Name</p>
+                        </div>
+                        <div class="advert-info align-items-end">
+                            <ul>
+                                <li>@i.Location</li>
+                                <li> - </li>
+                                <li>@i.Date</li>
+                            </ul>
+                            <h6>@i.Price грн</h6>
+                        </div>
+                    </div>
+                </a>
             </li>
         }
     </ul>

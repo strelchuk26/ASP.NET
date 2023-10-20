@@ -1,0 +1,46 @@
+﻿@model DataAccess.Entities.Advert
+
+<link href="~/css/advert.css" rel="stylesheet"/>
+
+<div class="container">
+    <div class="grid">
+        <div class="left-side">
+            <div class="section">
+                <div class="image">
+                    <img src="data:image/png;base64,@Convert.ToBase64String(Model.ImageFile)" alt="advert-img" />
+                </div>
+            </div>
+            <div class="section">
+               <p>@Model.Category.Name</p>
+               <h3 class="mb-3">ОПИС</h3>
+               <span class="description">@Model.Description</span>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="section">
+                <span class="span-date">Опубліковано @Model.Date</span>
+                <h1>@Model.Name</h1>
+                <h3 class="price">@Model.Price грн.</h3>
+                <button class="buy-btn" type="button">
+                    <span>Купити</span>
+                </button>
+            </div>
+            <div class="section">
+                <p>КОРИСТУВАЧ</p>
+                <div class="d-flex align-items-center">
+                    <div>
+                        <img width="48" src="~/img/avatar.svg"/>
+                    </div>
+                    <div>
+                        <p class="user-email">@Model.User.Email</p>
+                        <p class="user-phone">@Model.User.PhoneNumber</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <p>МІСЦЕЗНАХОДЖЕННЯ</p>
+                <h5>@Model.Location</h5>
+            </div>
+        </div>
+    </div>
+</div>

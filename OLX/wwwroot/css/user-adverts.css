@@ -25,8 +25,14 @@ h5 {
 }
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	margin-left: 28px;
+}
+
+.wrapper p {
+	margin-bottom: 10px;
 }
 
 .image img {
@@ -42,20 +48,59 @@ h5 {
 	gap: 5px;
 }
 
-	.actions button {
-		height: 40px;
-		padding: 6px 22px;
-		background-color: #fff;
-		color: rgb(0, 47, 52);
-		border: 2px solid rgb(0, 47, 52);
-		border-radius: 5px;
-		color: rgb(0, 47, 52);
-		font-weight: 700;
-		font-size: 14px;
-		transition: 0.1s;
-	}
+.actions a {
+	display: block;
+	text-decoration: none;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 22px;
+	background-color: #fff;
+	color: rgb(0, 47, 52);
+	border: 2px solid rgb(0, 47, 52);
+	border-radius: 5px;
+	color: rgb(0, 47, 52);
+	font-weight: 700;
+	font-size: 14px;
+	transition: 0.1s;
+}
 
-		.actions button:hover {
-			background-color: #002f34;
-			color: #fff;
-		}
+.actions a:hover {
+	background-color: #002f34;
+	color: #fff;
+}
+
+#logout {
+	background-color: #002f34;
+	color: #fff;
+	border: 5px solid rgb(0, 47, 52);
+	border-radius: 5px;
+	padding: 6px 22px;
+	transition: 0.2s;
+}
+
+#logout:hover {
+	background-color: #fff;
+	color: #002f34;
+}
+
+.my-orders {
+	display: block;
+	text-decoration: none;
+	height: 46px;
+	line-height: 46px;
+	vertical-align: middle;
+	padding: 0px 22px;
+	background-color: #fff;
+	color: rgb(0, 47, 52);
+	border: 2px solid rgb(0, 47, 52);
+	border-radius: 5px;
+	color: rgb(0, 47, 52);
+	font-weight: 700;
+	font-size: 16px;
+	transition: 0.1s;
+}
+
+.my-orders:hover {
+	background-color: #002f34;
+	color: #fff;
+}

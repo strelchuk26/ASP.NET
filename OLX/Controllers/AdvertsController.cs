@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Components.Web.Virtualization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Versioning;
 using System.Drawing;
 using System.Security.Claims;
 using static System.Net.Mime.MediaTypeNames;
@@ -34,8 +35,17 @@ namespace OLX.Controllers
 
         public IActionResult MyAdverts()
         {
-            var adverts = ctx.Adverts.Where(x => x.UserId == CurrentUserId);
-            return this.View(adverts.ToList());
+            var adverts = ctx.Adverts.Where(x => x.UserId == CurrentUserId).Include(x => x.Category).ToList();
+            return this.View(adverts);
+        }
+
+        public IActionResult Advert(int id)
+        {
+            var items = ctx.Adverts.Include(x => x.Category).Include(x => x.User).ToList();
+            var item = items.Find(x => x.Id == id);
+            if (item == null) return NotFound();
+
+            return View(item);
         }
 
         [HttpGet]
@@ -135,6 +145,12 @@ namespace OLX.Controllers
 
                     advert.ImageFile = ms.ToArray();
                 }
+            }
+
+            if (advert.Description == null)
+            {
+                LoadCategories();
+                return View(advert);
             }
 
             ctx.Adverts.Update(advert);

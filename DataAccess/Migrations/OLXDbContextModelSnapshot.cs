@@ -83,42 +83,42 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "Electronics"
+                            Name = "Електроніка"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Sport"
+                            Name = "Спорт"
                         },
                         new
                         {
                             Id = 3,
-                            Name = "Fashion"
+                            Name = "Мода та одяг"
                         },
                         new
                         {
                             Id = 4,
-                            Name = "Home & Garden"
+                            Name = "Сад і дім"
                         },
                         new
                         {
                             Id = 5,
-                            Name = "Transport"
+                            Name = "Запчастини, транспорт"
                         },
                         new
                         {
                             Id = 6,
-                            Name = "Toys & Hobbies"
+                            Name = "Іграшки та хоббі"
                         },
                         new
                         {
                             Id = 7,
-                            Name = "Musical Instruments"
+                            Name = "Музичні інструменти"
                         },
                         new
                         {
                             Id = 8,
-                            Name = "Art"
+                            Name = "Мистецтво"
                         });
                 });
 

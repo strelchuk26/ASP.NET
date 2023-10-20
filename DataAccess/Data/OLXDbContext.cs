@@ -28,14 +28,14 @@ namespace DataAccess.Data
 
 			modelBuilder.Entity<Category>().HasData(new[] 
 			{
-                new Category() { Id = 1, Name = "Electronics" },
-                new Category() { Id = 2, Name = "Sport" },
-                new Category() { Id = 3, Name = "Fashion" },
-                new Category() { Id = 4, Name = "Home & Garden" },
-                new Category() { Id = 5, Name = "Transport" },
-                new Category() { Id = 6, Name = "Toys & Hobbies" },
-                new Category() { Id = 7, Name = "Musical Instruments" },
-                new Category() { Id = 8, Name = "Art" }
+                new Category() { Id = 1, Name = "Електроніка" },
+                new Category() { Id = 2, Name = "Спорт" },
+                new Category() { Id = 3, Name = "Мода та одяг" },
+                new Category() { Id = 4, Name = "Сад і дім" },
+                new Category() { Id = 5, Name = "Запчастини, транспорт" },
+                new Category() { Id = 6, Name = "Іграшки та хоббі" },
+                new Category() { Id = 7, Name = "Музичні інструменти" },
+                new Category() { Id = 8, Name = "Мистецтво" }
             });
         }
 
