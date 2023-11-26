@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Data.Common;
 using System.Globalization;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using System.Diagnostics.Metrics;
 
 namespace DataAccess.Data
 {
@@ -38,6 +39,7 @@ namespace DataAccess.Data
                 new Category() { Id = 8, Name = "Мистецтво" }
             });
         }
+
 
         public DbSet<Advert> Adverts { get; set; }
 		public DbSet<Category> Categories { get; set; }
