@@ -13,6 +13,6 @@ namespace DataAccess.Entities
         public DateTime Date { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }
-        public ICollection<Advert> Adverts { get; set; }
+        public ICollection<Advert>? Adverts { get; set; }
     }
 }
