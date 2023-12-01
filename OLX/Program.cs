@@ -18,10 +18,10 @@ namespace OLX
 
 			builder.Services.AddDbContext<OLXDbContext>(opts => opts.UseSqlServer(connStr));
 
-               builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<OLXDbContext>();
+			builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
+			.AddEntityFrameworkStores<OLXDbContext>();
 
-            builder.Services.AddFluentValidationAutoValidation();
+			builder.Services.AddFluentValidationAutoValidation();
 			builder.Services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
 
             builder.Services.AddDistributedMemoryCache();
