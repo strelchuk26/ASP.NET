@@ -9,6 +9,7 @@ using System.Data.Common;
 using System.Globalization;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System.Diagnostics.Metrics;
+using DataAccess.Data;
 
 namespace DataAccess.Data
 {
@@ -40,7 +41,7 @@ namespace DataAccess.Data
             });
         }
 
-
+        public DbSet<Order> Orders { get; set; }
         public DbSet<Advert> Adverts { get; set; }
 		public DbSet<Category> Categories { get; set; }
 	}

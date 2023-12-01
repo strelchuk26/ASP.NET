@@ -40,20 +40,23 @@ h1 {
 }
 
 .buy-btn {
+	display: block;
+	text-align: center;
+	text-decoration: none;
 	width: 100%;
+	padding: 10px;
 	min-height: 48px;
-	border-radius: 5px;
 	background-color: rgb(0, 47, 52);
+	border: 3px solid black;
+	border-radius: 5px;
 	color: #fff;
 	outline: none;
-	border: none;
 	transition: 0.1s;
 }
 
 .buy-btn:hover {
 	background-color: #fff;
 	color: rgb(0, 47, 52);
-	border: 3px solid black;
 }
 
 .buy-btn span {

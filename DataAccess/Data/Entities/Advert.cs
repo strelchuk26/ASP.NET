@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess.Data;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
@@ -23,5 +24,6 @@ namespace DataAccess.Entities
         public int? Price { get; set; }
         public Category? Category { get; set; }
         public User User { get; set; }
+        public Order? Order { get; set; }
     }
 }

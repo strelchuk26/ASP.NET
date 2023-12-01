@@ -1,0 +1,12 @@
+﻿@model List<DataAccess.Entities.Order>
+
+<ul>
+    @foreach (var i in Model)
+    {
+        <li>
+            <div>
+                <h1>OrderId: @i.Id</h1>
+            </div>
+        </li>
+    }
+</ul>

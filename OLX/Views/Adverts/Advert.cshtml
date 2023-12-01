@@ -25,9 +25,9 @@
                 <span class="span-date">Опубліковано @Model.Date</span>
                 <h1>@Model.Name</h1>
                 <h3 class="price">@Model.Price грн.</h3>
-                <button class="buy-btn" type="button">
+                <a asp-controller="Orders" asp-action="Create" asp-route-id="@Model.Id" class="buy-btn">
                     <span>Купити</span>
-                </button>
+                </a>
             </div>
             <div class="section">
                 <p>КОРИСТУВАЧ</p>
