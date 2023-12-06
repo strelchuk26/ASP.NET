@@ -12,6 +12,9 @@ namespace DataAccess.Entities
         public int Id { get; set; }
         public DateTime Date { get; set; }
         public string UserId { get; set; }
+        public string BuyerId { get; set; }
+        public int AdvertId { get; set; }
+        public int Price { get; set; }
         public User User { get; set; }
         public ICollection<Advert> Adverts { get; set; }
     }

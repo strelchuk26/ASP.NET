@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ln29QjhXrThTS8dDt4isLKEZxvaGScJkMZZ/vh8++Go=",
+  "Hash": "ho2g3P05d9sGT5cWpWzeLvYr3SmHWaskfmXaN6Owg4c=",
   "Source": "OLX",
   "BasePath": "_content/OLX",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\create-advert.css"
+    },
+    {
+      "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\create-order.css",
+      "SourceId": "OLX",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\",
+      "BasePath": "_content/OLX",
+      "RelativePath": "css/create-order.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create-order.css"
     },
     {
       "Identity": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\site.css",

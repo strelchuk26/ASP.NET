@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\create-advert.css"
     },
     {
+      "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\create-order.css",
+      "PackagePath": "staticwebassets\\css\\create-order.css"
+    },
+    {
       "Id": "C:\\Users\\bogda\\OneDrive\\Документы\\GitHub\\ASP.NET\\OLX\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

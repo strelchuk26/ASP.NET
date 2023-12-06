@@ -19,29 +19,44 @@ namespace OLX.Controllers
 
         public IActionResult Index()
         {
-            return this.View(ctx.Orders.ToList());
+            var orders = ctx.Orders.Where(x => x.BuyerId == CurrentUserId).ToList();
+            return View(orders);
         }
 
+
+        // action for show view
         public IActionResult Create(int id)
         {
             var items = ctx.Adverts.Include(x => x.Category).Include(x => x.User).ToList();
             var item = items.Find(x => x.Id == id);
+
             if (item == null) return NotFound();
 
-            var adverts = new List<Advert> { item };
+            return View(item);
+        }
+
+
+        // action for create order
+        public IActionResult CreateOrder(int advertId)
+        {
+            var adverts = ctx.Adverts.Include(x => x.Category).Include(x => x.User).ToList();
+            var advert = adverts.Find(x => x.Id == advertId); 
+            if (advert == null) return NotFound();
 
             var order = new Order()
             {
                 Date = DateTime.Now,
-                UserId = CurrentUserId,
-                Adverts = adverts
+                BuyerId = CurrentUserId,
+                UserId = advert.UserId,
+                AdvertId = advert.Id,
+                Price = advert.Price
             };
 
             ctx.Orders.Add(order);
-            ctx.Adverts.Remove(item);
+            ctx.Adverts.Remove(advert);
             ctx.SaveChanges();
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", "Orders");
         }
     }
 }

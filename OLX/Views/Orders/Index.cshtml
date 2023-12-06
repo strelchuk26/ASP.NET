@@ -1,12 +1,40 @@
 ﻿@model List<DataAccess.Entities.Order>
 
-<ul>
+<div class="container">
+    @*<div class="row gap-3">
+        @foreach (var i in Model)
+        {
+            <div class="product">
+                <div class="info">
+                    <div class="image">
+                        <img src="data:image/png;base64,@Convert.ToBase64String(advert.ImageFile)" alt="advert-img">
+                    </div>
+                    <div class="wrapper">
+                        <div class="name-price">
+                            <h4>@advert.Name</h4>
+                            <h5>@advert.Price грн.</h5>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end h-100">
+                            <div class="d-flex flex-column w-100">
+                                <p>@advert.Category.Name</p>
+                                <div class="d-flex">
+                                    <p>@advert.Location&nbsp;</p>
+                                    <p>-</p>
+                                    <p>&nbsp;@advert.Date</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a asp-action="Edit" asp-route-id="@i.Id" class="btn">Редагувати</a>
+                                <a asp-action="Delete" asp-route-id="@i.Id" class="btn">Деактивувати</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>*@
     @foreach (var i in Model)
     {
-        <li>
-            <div>
-                <h1>OrderId: @i.Id</h1>
-            </div>
-        </li>
+        <h3>@i.Id - @i.Date - @i.Price UAH</h3>
     }
-</ul>
+</div>
